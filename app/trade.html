@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's trade: $264.7 billion of exports in 2024, led by mineral fuels, palm oil and iron and steel; China is the largest partner.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="trade">
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">National Statistics · Indonesia</p>
+    <h1>Trade</h1>
+    <p class="lede">Indonesia exported $264.7 billion of goods in 2024 and imported $233.0 billion — a surplus of about $31.7 billion, the fifth in a row.</p>
+  </div>
+</header>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="demographics.html">Demographics</a></li>
+      <li><a href="economy.html">Economy</a></li>
+      <li><a href="health.html">Health</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="trade.html" aria-current="page">Trade</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h2>What Indonesia sells</h2>
+    <p>Mineral fuels and oils are the biggest export group at $55.5 billion (21.0% of goods exports), led by coal — Indonesia is the world&rsquo;s largest thermal coal exporter — then animal and vegetable oils, mostly palm oil, at $26.8 billion, and iron and steel at $25.8 billion, a category transformed by nickel processing. Non-oil and gas products made up 86.1% of exports in 2024.</p>
+
+    <div class="chart-card">
+      <h3>Top export products, 2024</h3>
+      <p class="section-note">Billion US dollars. Source: BPS trade statistics (customs data).</p>
+      <div id="chart-exports"></div>
+    </div>
+
+    <div class="table-card">
+      <table>
+        <caption>Top export products, 2024</caption>
+        <thead><tr><th>Product</th><th>Value</th><th>Share of exports</th></tr></thead>
+        <tbody id="exports-body"></tbody>
+      </table>
+    </div>
+
+    <h2>Who buys it</h2>
+    <p>China takes almost a quarter of Indonesia&rsquo;s goods exports ($62.3 billion, 23.5%), buying coal, palm oil, nickel and steel. The United States is second at $28.4 billion — mainly footwear, electronics, textiles, rubber and shrimp — followed by India at $21.5 billion.</p>
+
+    <div class="chart-card">
+      <h3>Top export partners, 2024</h3>
+      <p class="section-note">Billion US dollars. Source: BPS trade statistics (customs data).</p>
+      <div id="chart-partners"></div>
+    </div>
+
+    <div class="table-card">
+      <table>
+        <caption>Top export partners, 2024</caption>
+        <thead><tr><th>Country</th><th>Value</th><th>Share of exports</th></tr></thead>
+        <tbody id="partners-body"></tbody>
+      </table>
+    </div>
+
+    <h2>What Indonesia buys</h2>
+    <p>Imports are dominated by the inputs industry needs: machinery and mechanical appliances ($31.4 billion), electrical machinery ($27.8 billion) and mineral fuels ($25.6 billion). The five-year balance below shows exports recovering strongly after 2020, with a surplus every year since.</p>
+
+    <div class="table-card">
+      <table>
+        <caption>Top import products, 2024</caption>
+        <thead><tr><th>Product</th><th>Value</th><th>Share of imports</th></tr></thead>
+        <tbody id="imports-body"></tbody>
+      </table>
+    </div>
+
+    <div class="chart-card">
+      <h3>Exports of goods, 2020–2024</h3>
+      <p class="section-note">Billion US dollars. Source: BPS trade statistics (customs data).</p>
+      <div id="chart-balance"></div>
+    </div>
+
+    <div class="callout">
+      <p><strong>Why it matters.</strong> Trade is 22.3% of GDP, and the export mix is shifting: coal&rsquo;s share is falling while processed nickel, steel and palm-oil derivatives rise. See <a href="economy.html">Economy</a>.</p>
+    </div>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ol id="sources-list"></ol>
+    <p id="data-stamp"></p>
+    <p>Indonesia in Numbers is an independent statistics site. It is not affiliated with BPS, the World Bank, the United Nations or the Government of Indonesia.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

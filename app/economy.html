@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's economy: $1.40 trillion GDP in 2024, 5.03% growth, 1.57% inflation, 4.91% unemployment, and the poverty rate.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="economy">
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">National Statistics · Indonesia</p>
+    <h1>Economy</h1>
+    <p class="lede">Southeast Asia&rsquo;s largest economy: $1.40 trillion of GDP in 2024, growing 5.03%, with inflation at a record-low 1.57%.</p>
+  </div>
+</header>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="demographics.html">Demographics</a></li>
+      <li><a href="economy.html" aria-current="page">Economy</a></li>
+      <li><a href="health.html">Health</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="trade.html">Trade</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h2>Growth and size</h2>
+    <p>Indonesia&rsquo;s economy grew <strong>5.03%</strong> in real terms in 2024 (BPS), the fourth straight year of growth at or above 5% after the 2020 pandemic contraction of 2.07%. Nominal GDP reached <strong>$1.40 trillion</strong> (World Bank), the world&rsquo;s 16th largest economy, or $4.67 trillion on a purchasing-power-parity basis. GDP per person was $4,925 — $16,515 in PPP terms.</p>
+
+    <div class="chart-card">
+      <h3>GDP, 2020–2024</h3>
+      <p class="section-note">Trillion current US dollars. Source: World Bank, World Development Indicators.</p>
+      <div id="chart-gdp"></div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Real GDP growth, 2020–2024</h3>
+      <p class="section-note">Percent change on the previous year. Source: BPS.</p>
+      <div id="chart-growth"></div>
+    </div>
+
+    <h2>What the economy is made of</h2>
+    <p>Manufacturing is the largest single sector at 18.7% of GDP, followed by wholesale and retail trade (12.9%), agriculture, forestry and fishing (12.5%), construction (9.7%) and mining and quarrying (8.6%). The nickel-processing boom has lifted manufacturing&rsquo;s share since 2020. Shares are BPS estimates for 2024.</p>
+    <div class="chart-card">
+      <h3>GDP by sector, 2024</h3>
+      <p class="section-note">Share of GDP. Source: BPS.</p>
+      <div class="donut-wrap" id="chart-sectors"></div>
+    </div>
+
+    <h2>Key indicators</h2>
+    <div class="table-card">
+      <table>
+        <caption>Macroeconomic indicators</caption>
+        <thead><tr><th>Indicator</th><th>Value</th><th>Year</th><th>Source</th></tr></thead>
+        <tbody id="macro-body"></tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p><strong>Reading the numbers.</strong> Inflation of 1.57% in 2024 was the lowest on record and inside Bank Indonesia&rsquo;s 2.5% ± 1% target band, while unemployment fell to 4.91% — the lowest since the pandemic. Poverty, at 8.57% in September 2024, is at its lowest level ever recorded by BPS.</p>
+    </div>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ol id="sources-list"></ol>
+    <p id="data-stamp"></p>
+    <p>Indonesia in Numbers is an independent statistics site. It is not affiliated with BPS, the World Bank, the United Nations or the Government of Indonesia.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

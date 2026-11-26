@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia in Numbers — National Statistics of Indonesia</title>
+<meta name="description" content="Population, economy, health, education and trade statistics for Indonesia, with real figures, sources and years.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="overview">
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">National Statistics · Indonesia</p>
+    <h1>Indonesia in Numbers</h1>
+    <p class="lede">The population, economy, health, education and trade of the world&rsquo;s fourth most populous country — every figure with its source and year.</p>
+  </div>
+</header>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html" aria-current="page">Overview</a></li>
+      <li><a href="demographics.html">Demographics</a></li>
+      <li><a href="economy.html">Economy</a></li>
+      <li><a href="health.html">Health</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="trade.html">Trade</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h2>Indonesia at a glance</h2>
+    <p>Indonesia is an archipelago of more than 17,000 islands and 38 provinces, stretching across three time zones between the Indian and Pacific Oceans. With 283.5 million people in 2024 it is the world&rsquo;s fourth most populous country and Southeast Asia&rsquo;s largest economy. Choose a headline figure below to open its full section.</p>
+
+    <div class="kpis">
+      <a class="kpi" href="demographics.html"><span class="kpi-label">Population</span><span class="kpi-value">283.5 million</span><span class="kpi-detail">2024 · UN World Population Prospects</span></a>
+      <a class="kpi" href="economy.html"><span class="kpi-label">GDP</span><span class="kpi-value">$1.40 trillion</span><span class="kpi-detail">2024 · World Bank</span></a>
+      <a class="kpi" href="economy.html"><span class="kpi-label">GDP per capita</span><span class="kpi-value">$4,925</span><span class="kpi-detail">2024 · World Bank</span></a>
+      <a class="kpi" href="health.html"><span class="kpi-label">Life expectancy</span><span class="kpi-value">71.3 years</span><span class="kpi-detail">2023 · World Bank</span></a>
+      <a class="kpi" href="education.html"><span class="kpi-label">Literacy rate</span><span class="kpi-value">96.0%</span><span class="kpi-detail">2023 · BPS</span></a>
+      <a class="kpi" href="trade.html"><span class="kpi-label">Exports of goods</span><span class="kpi-value">$264.7 billion</span><span class="kpi-detail">2024 · BPS</span></a>
+    </div>
+
+    <h2>Country facts</h2>
+    <dl class="facts">
+      <div><dt>Official name</dt><dd>Republic of Indonesia</dd></div>
+      <div><dt>Capital</dt><dd>Jakarta</dd></div>
+      <div><dt>Land area</dt><dd>1,904,569 km&sup2;</dd></div>
+      <div><dt>Provinces</dt><dd>38</dd></div>
+      <div><dt>Official language</dt><dd>Indonesian (Bahasa Indonesia)</dd></div>
+      <div><dt>Currency</dt><dd>Indonesian rupiah (IDR)</dd></div>
+      <div><dt>Independence</dt><dd>17 August 1945</dd></div>
+      <div><dt>Time zones</dt><dd>WIB, WITA, WIT (UTC+7 to UTC+9)</dd></div>
+    </dl>
+
+    <div class="chart-card">
+      <h3>Population, 2020–2024</h3>
+      <p class="section-note">Millions of people, mid-year estimates. Source: UN World Population Prospects 2024.</p>
+      <div id="chart-population"></div>
+    </div>
+
+    <div class="chart-card">
+      <h3>GDP, 2020–2024</h3>
+      <p class="section-note">Trillion current US dollars. Source: World Bank, World Development Indicators.</p>
+      <div id="chart-gdp"></div>
+    </div>
+
+    <div class="callout">
+      <p><strong>How to read this site.</strong> Each section opens with the headline figure, then a chart and a table with the source and year of every number. Nothing on this site is fetched from the internet — all figures are stored in the site&rsquo;s own files, so it works offline.</p>
+    </div>
+
+    <h2>Indonesia in the world</h2>
+    <p>Indonesia is the world&rsquo;s fourth most populous country, its 14th largest by land area, and its 16th largest economy — 8th by purchasing power parity. Its goods exports rank 28th in the world.</p>
+    <div class="table-card">
+      <table>
+        <caption>Indonesia&rsquo;s world ranking</caption>
+        <thead><tr><th>Measure</th><th>Value</th><th>World rank</th><th>Year</th><th>Source</th></tr></thead>
+        <tbody id="ranks-body"></tbody>
+      </table>
+    </div>
+
+    <h2>Explore the sections</h2>
+    <p><a href="demographics.html">Demographics</a> — population growth, age structure and the ten largest provinces. <a href="economy.html">Economy</a> — GDP, growth, inflation, unemployment and poverty. <a href="health.html">Health</a> — life expectancy and mortality. <a href="education.html">Education</a> — literacy and schooling. <a href="trade.html">Trade</a> — what Indonesia sells, buys, and to whom.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ol id="sources-list"></ol>
+    <p id="data-stamp"></p>
+    <p>Indonesia in Numbers is an independent statistics site. It is not affiliated with BPS, the World Bank, the United Nations or the Government of Indonesia.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

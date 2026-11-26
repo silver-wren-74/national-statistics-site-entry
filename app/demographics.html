@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demographics — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's population: 283.5 million people in 2024, age structure, growth and the largest provinces.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="demographics">
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">National Statistics · Indonesia</p>
+    <h1>Demographics</h1>
+    <p class="lede">283.5 million people in 2024 — the world&rsquo;s fourth largest population, still growing by about 0.8% a year, with a median age of 31.</p>
+  </div>
+</header>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="demographics.html" aria-current="page">Demographics</a></li>
+      <li><a href="economy.html">Economy</a></li>
+      <li><a href="health.html">Health</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="trade.html">Trade</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h2>Population</h2>
+    <p>Indonesia&rsquo;s population reached <strong>283,487,931</strong> in 2024 (UN World Population Prospects 2024, medium variant), up 0.82% on 2023. The World Bank records 285.7 million for 2025. About 59% of Indonesians live in towns and cities, and the population density is roughly 149 people per square kilometre of land.</p>
+
+    <div class="kpis">
+      <div class="kpi"><span class="kpi-label">Population, 2024</span><span class="kpi-value">283.5 million</span><span class="kpi-detail">UN WPP 2024</span></div>
+      <div class="kpi"><span class="kpi-label">Annual growth</span><span class="kpi-value">+0.82%</span><span class="kpi-detail">2024 · UN WPP 2024</span></div>
+      <div class="kpi"><span class="kpi-label">Median age</span><span class="kpi-value">31.1 years</span><span class="kpi-detail">2024 · UN WPP 2024</span></div>
+      <div class="kpi"><span class="kpi-label">Urban share</span><span class="kpi-value">59.0%</span><span class="kpi-detail">2024 · World Bank</span></div>
+      <div class="kpi"><span class="kpi-label">Fertility rate</span><span class="kpi-value">2.12</span><span class="kpi-detail">children per woman, 2024 · UN WPP</span></div>
+      <div class="kpi"><span class="kpi-label">Projected, 2050</span><span class="kpi-value">320.7 million</span><span class="kpi-detail">UN WPP 2024, medium variant</span></div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Population, 2020–2024</h3>
+      <p class="section-note">Millions of people, mid-year estimates. Source: UN World Population Prospects 2024.</p>
+      <div id="chart-population"></div>
+    </div>
+
+    <h2>Age structure</h2>
+    <p>Indonesia is still a young country: almost a quarter of the population is under 15, and more than two in three are of working age (15–64). The old-age dependency ratio is only 10.7 — about 11 people aged 65+ for every 100 of working age — while the child dependency ratio is 36.1.</p>
+    <div class="chart-card">
+      <h3>Age structure, 2024</h3>
+      <p class="section-note">Share of total population. Source: UN World Population Prospects 2024.</p>
+      <div class="donut-wrap" id="chart-age"></div>
+    </div>
+
+    <h2>Largest provinces</h2>
+    <p>Java is home to more than half of all Indonesians. West Java alone, with about 49.9 million people, would be one of the world&rsquo;s 30 most populous countries on its own. Figures are BPS mid-year estimates for 2024.</p>
+    <div class="table-card">
+      <table>
+        <caption>Ten largest provinces by population, 2024</caption>
+        <thead><tr><th>Province</th><th>Population</th></tr></thead>
+        <tbody id="provinces-body"></tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p><strong>Why it matters.</strong> A median age of 31 and a working-age share of 68% give Indonesia a demographic dividend — but only while schooling and jobs keep pace. See <a href="education.html">Education</a> and <a href="economy.html">Economy</a>.</p>
+    </div>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ol id="sources-list"></ol>
+    <p id="data-stamp"></p>
+    <p>Indonesia in Numbers is an independent statistics site. It is not affiliated with BPS, the World Bank, the United Nations or the Government of Indonesia.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

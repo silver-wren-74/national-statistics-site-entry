@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health — Indonesia in Numbers</title>
+<meta name="description" content="Health in Indonesia: life expectancy 71.3 years, infant and under-5 mortality, maternal mortality, and near-universal health insurance.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="health">
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">National Statistics · Indonesia</p>
+    <h1>Health</h1>
+    <p class="lede">Life expectancy is 71.3 years, and almost every Indonesian — about 98% — is covered by the national health insurance scheme, JKN.</p>
+  </div>
+</header>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="demographics.html">Demographics</a></li>
+      <li><a href="economy.html">Economy</a></li>
+      <li><a href="health.html" aria-current="page">Health</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="trade.html">Trade</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <h2>How long Indonesians live</h2>
+    <p>Life expectancy at birth was <strong>71.3 years</strong> in 2023 (World Bank), up from about 66 years in 2000. That is below the East Asia and Pacific average of 76.9 years but close to the Southeast Asian average of 71.9 years. Infant mortality has fallen to 16 per 1,000 live births and under-5 mortality to 19 per 1,000 — roughly a third of their 2000 levels.</p>
+
+    <div class="chart-card">
+      <h3>Life expectancy at birth, 2023</h3>
+      <p class="section-note">Years. Source: World Bank, World Development Indicators.</p>
+      <div id="chart-life"></div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Child mortality: Indonesia vs. the world, 2023</h3>
+      <p class="section-note">Deaths per 1,000 live births. Indonesia is below the world average on both measures. Source: World Bank, World Development Indicators.</p>
+      <div id="chart-mortality"></div>
+    </div>
+
+    <h2>Key indicators</h2>
+    <div class="table-card">
+      <table>
+        <caption>Health indicators</caption>
+        <thead><tr><th>Indicator</th><th>Value</th><th>Year</th><th>Source</th></tr></thead>
+        <tbody id="health-body"></tbody>
+      </table>
+    </div>
+
+    <h2>Universal coverage</h2>
+    <p>Indonesia runs one of the world&rsquo;s largest single-payer health insurance schemes. Jaminan Kesehatan Nasional (JKN), run by BPJS Kesehatan, covered about 281.8 million people in 2024 — roughly 98% of the population. Maternal mortality, at 173 deaths per 100,000 live births in WHO&rsquo;s 2020 estimate, remains the indicator furthest from regional peers and the focus of most public-health spending.</p>
+
+    <div class="callout">
+      <p><strong>Why it matters.</strong> A fertility rate of 2.12 children per woman — just above replacement — and a median age of 31 mean the disease burden is shifting from infectious diseases of childhood towards the chronic diseases of adults. See <a href="demographics.html">Demographics</a>.</p>
+    </div>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ol id="sources-list"></ol>
+    <p id="data-stamp"></p>
+    <p>Indonesia in Numbers is an independent statistics site. It is not affiliated with BPS, the World Bank, the United Nations or the Government of Indonesia.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

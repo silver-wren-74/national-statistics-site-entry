@@ -1,0 +1,201 @@
+/* Indonesia in Numbers — original design.
+   Palette: deep teal for trust, warm amber for highlights, warm paper background.
+   Layout: single column, max 1020px, cards for KPIs, tables with clear headers,
+   responsive down to a 360px phone. */
+:root {
+  --teal: #0f766e;
+  --teal-dark: #115e59;
+  --teal-soft: #ccfbf1;
+  --amber: #b45309;
+  --amber-soft: #fef3c7;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --paper: #fafaf9;
+  --card: #ffffff;
+  --line: #e7e5e4;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+a { color: var(--teal-dark); }
+a:hover { color: var(--amber); }
+
+.wrap { max-width: 1020px; margin: 0 auto; padding: 0 20px; }
+
+/* Masthead */
+.masthead {
+  background: var(--teal-dark);
+  color: #f0fdfa;
+  padding: 34px 0 26px;
+  border-bottom: 5px solid var(--amber);
+}
+.masthead .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fcd34d;
+  margin: 0 0 6px;
+}
+.masthead h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 1.08;
+  margin: 0 0 8px;
+}
+.masthead p.lede { margin: 0; max-width: 640px; color: #ccfbf1; font-size: 18px; }
+
+/* Navigation */
+.nav {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.nav a {
+  display: block;
+  padding: 13px 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+  border-bottom: 3px solid transparent;
+}
+.nav a:hover { color: var(--teal-dark); background: var(--teal-soft); }
+.nav a[aria-current="page"] { color: var(--teal-dark); border-bottom-color: var(--amber); }
+
+main { padding: 28px 0 40px; }
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 34px 0 8px;
+}
+h2:first-child { margin-top: 0; }
+h3 { font-size: 20px; margin: 26px 0 6px; }
+p { margin: 0 0 14px; }
+.section-note { color: var(--muted); font-size: 15px; }
+
+/* KPI cards */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 22px 0 8px;
+}
+.kpi {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--teal);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--ink);
+  display: block;
+}
+.kpi:hover { border-color: var(--teal); box-shadow: 0 4px 16px rgba(15, 118, 110, 0.12); }
+.kpi .kpi-label { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; }
+.kpi .kpi-value { display: block; font-family: Georgia, serif; font-size: 30px; line-height: 1.2; margin: 4px 0 2px; }
+.kpi .kpi-detail { display: block; font-size: 14px; color: var(--muted); }
+
+/* Country facts strip */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 28px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 8px 22px;
+  margin: 18px 0;
+}
+.facts dt { font-weight: 700; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.facts dd { margin: 0 0 12px; }
+
+/* Charts */
+.chart-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin: 16px 0;
+}
+.chart-card h3 { margin-top: 0; }
+.chart-svg { width: 100%; height: auto; display: block; }
+.chart-label { font-size: 12px; fill: var(--muted); }
+.chart-value { font-size: 13px; font-weight: 700; fill: var(--ink); }
+.chart-axis { stroke: var(--line); stroke-width: 1; }
+.chart-centre { font-size: 26px; font-weight: 700; fill: var(--ink); font-family: Georgia, serif; }
+.donut-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; }
+.donut-wrap .chart-svg { max-width: 300px; }
+.legend { list-style: none; margin: 0; padding: 0; font-size: 15px; }
+.legend li { margin: 6px 0; }
+.legend-dot { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 8px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 15.5px; }
+caption { text-align: left; font-weight: 700; padding: 10px 0; font-size: 17px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--teal-soft); color: var(--teal-dark); font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: #f5f5f4; }
+.table-card { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); margin: 16px 0; }
+.table-card table { border: none; }
+
+/* Callout */
+.callout {
+  background: var(--amber-soft);
+  border-left: 5px solid var(--amber);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 18px;
+  margin: 18px 0;
+}
+.callout p { margin: 0; }
+
+/* Footer / sources */
+footer.site {
+  border-top: 1px solid var(--line);
+  background: #f5f5f4;
+  padding: 26px 0 34px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+footer.site h2 { font-size: 19px; margin: 0 0 8px; font-family: inherit; }
+footer.site ol { margin: 0 0 12px; padding-left: 22px; }
+footer.site li { margin-bottom: 4px; }
+
+/* Phone layout */
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .masthead h1 { font-size: 32px; }
+  .kpis { grid-template-columns: 1fr 1fr; }
+  .facts { grid-template-columns: 1fr; }
+  .nav a { padding: 11px 10px; font-size: 14px; }
+  .kpi .kpi-value { font-size: 24px; }
+  .chart-centre { font-size: 22px; }
+}
+@media (max-width: 420px) {
+  .kpis { grid-template-columns: 1fr; }
+}
